@@ -1,8 +1,7 @@
 h1{
-    color: rgb(38, 0, 255);
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifx;
+    color: red;
     
+
 }
 
 body {
@@ -42,24 +41,39 @@ body {
         transform: translateX(-1000px);
 }
 }
-.aero {
-    background-image: url(./airo.png);
+.car {
+    background-image: url(./thar.png);
     position: absolute;
     height: 300px;
-    width: 600px;
+    width: 400px;
     bottom: 50px;
     animation: aero 5s linear infinite ;
 }
 
-@keyframes aero {
+@keyframes car {
     0%{
         transform: translate(-200px,0px);
     }
-    30%{
+    /* 30%{
         transform: translate(200px,10px);
-    }
+    } */
     100%{
-        transform: translate(1500px,-600px)
-        rotate(-35deg);
+        transform: translate(1500px,0px)
+       
     }
+}
+.tyre{
+    background-image: url(./twheel.png);
+    background-size: cover;
+    height: 107px;
+    width: 107px;
+    margin-top: 524px;
+    margin-left: 6%;
+    position: relative;
+    animation: tyre 1s linear infinite;
+}
+@keyframes tyre{
+  100%{
+    transform: rotate(360deg);
+  }
 }
